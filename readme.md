@@ -45,5 +45,5 @@ Docker should be **installed** and **running** on your machine.
       password: <%= ENV["MYAPP_DATABASE_PASSWORD"] %>
     ```
 0. To boot the app, run `docker compose up -d`
-0. In another terminal or window, run `docker compose exec web rails db:create`
+0. To create the database, run `docker compose exec web rails db:create`
 0. Navigate to `https://localhost:3000` 🎉
