@@ -6,7 +6,7 @@ I'm adding this purely for myself, but maybe someone out there can use too. This
 ### Prerequisites
 Docker should be **installed** and **running** on your machine.
 ### Steps
-0. `git clone THIS_REPO your_folder_name && cd your_folder_name`
+0. `git clone https://github.com/notmarkmiranda/docker_rails_starter_kit.git your_folder_name && cd your_folder_name`
 0. You can update the `ruby_version` environment variable in `./Dockerfile` on line 1. This is currently set to use 3.1.0<span style="color:red">*</span>
 0. You can also update the rails version in `./Gemfile` on line 2. This is currently set to use 7.0.0<span style="color:red">*</span>
 0. To start a new rails project, I use:
