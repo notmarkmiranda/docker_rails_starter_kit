@@ -1,4 +1,4 @@
-FROM ruby:3.1.0
+FROM ruby:3.0.3
 RUN apt-get update -qq && apt-get install -y nodejs postgresql-client
 WORKDIR /myapp
 COPY Gemfile /myapp/Gemfile

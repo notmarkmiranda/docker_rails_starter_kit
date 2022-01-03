@@ -7,8 +7,8 @@ I'm adding this purely for myself, but maybe someone out there can use too. This
 Docker should be **installed** and **running** on your machine.
 ### Steps
 0. `git clone https://github.com/notmarkmiranda/docker_rails_starter_kit.git your_folder_name && cd your_folder_name`
-0. You can update the `ruby_version` environment variable in `./Dockerfile` on line 1. This is currently set to use 3.1.0<span style="color:red">*</span>
-0. You can also update the rails version in `./Gemfile` on line 2. This is currently set to use 7.0.0<span style="color:red">*</span>
+0. You can update the `ruby_version` environment variable in `./Dockerfile` on line 1. This is currently set to use 3.0.3
+0. You can also update the rails version in `./Gemfile` on line 2. This is currently set to use 7.0.0
 0. To start a new rails project, I use:
 `docker compose run --rm --no-deps web rails new . --force --database=postgresql -T --api`
     * `run --rm` is to tear down the container when the command is finished.
@@ -47,7 +47,3 @@ Docker should be **installed** and **running** on your machine.
 0. To boot the app, run `docker compose up -d`
 0. In another terminal or window, run `docker compose exec web rails db:create`
 0. Navigate to `https://localhost:3000` 🎉
-
-#
-#
-<span style="color:red">*</span>The latest versions as I as writing this.
